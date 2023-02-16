@@ -7,7 +7,6 @@
  */
 int main(void)
 {
-	char ="'and thatpiece of art is useful"\" - Dora Korpa, 2015-10-19"
-	putchar(char);
+	write("and that piece of art is useful"\" - Dora Korpar, 2015-10-19\n");
 	return (1);
 }
