@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char char ="'and thatpiece of art is useful"\" - Dora Korpa, 2015-10-19"
+	char ="'and thatpiece of art is useful"\" - Dora Korpa, 2015-10-19"
 	putchar(char);
 	return (1);
 }
