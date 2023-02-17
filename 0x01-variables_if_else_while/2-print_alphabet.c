@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - print lower case aplhabets
- * Description: print lower case alphabets
- * REturn: Return 0 Success
+ * main -Entry point
+ * Description: Print lowercase alphabets
+ * Return: Return 0 Success
  */
 
 int main(void)
