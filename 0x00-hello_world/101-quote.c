@@ -2,9 +2,9 @@
 #include <unistd.h>
 
 /**
- * main - Entry point
- * Description: print out line to standard error
- * Return 1 (Success)
+ * main -Entry point
+ * Description: Print out line to standard error
+ * Return: Return 1 (Success)
  */
 int main(void)
 {
