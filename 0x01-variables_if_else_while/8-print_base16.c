@@ -10,7 +10,7 @@ int main(void)
 {
 	char n;
 
-	char x;
+	char m;
 
 	for (n = 0; n <= 9; n++)
 	{
@@ -19,7 +19,7 @@ int main(void)
 
 	for (m = 'a'; m <= 'f'; m++)
 	{
-		putchar((m % 6 + '0');
+		putchar((m % 6 + '0'));
 	}
 	putchar('\n');
 	return (0);
