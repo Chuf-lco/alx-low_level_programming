@@ -1,18 +1,18 @@
 #include <stdio.h>
 /**
- * main -Entry point
- * Description: lower case alphabets
+ * main - print lower case aplhabets
+ * Description: print lower case alphabets
  * REturn: Return 0 Success
  */
 
-int main (void)
+int main(void)
 {
-	int ch = 'a';
-	while (ch <= 'z')
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++);
 	{
 		putchar(ch);
-		ch++;
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
