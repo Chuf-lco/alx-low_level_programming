@@ -1,9 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/*more headers goes there */
+/**
+ * main -Entry point
+ * Description: Positive or negative number
+ * Return: Return 0 Success
+ */
 
-/*positive or negative*/
 int main(void)
 {
 	int n;
