@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point
- *
+ * Description: print out line to standard error
  * Return 1 (Success)
  */
 int main(void)
