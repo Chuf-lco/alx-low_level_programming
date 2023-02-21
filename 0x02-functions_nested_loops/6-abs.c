@@ -3,8 +3,8 @@
 /**
  * _abs -Entry point
  * description: Absolute value
- * @int i: Absolute value of an integer
- * Return: Return 0 Success
+ * @i: Absolute value of an integer
+ * Return: Return i Success
  */
 
 int _abs(int i)
@@ -13,10 +13,10 @@ int _abs(int i)
 	{
 		i = -(i);
 	}
-	else
+	else if (i >= 0)
 	{
 		i = i;
 	}
-	return (0);
+	return (i);
 
 }
