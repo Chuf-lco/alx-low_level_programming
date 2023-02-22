@@ -11,8 +11,10 @@ int main(void)
 	long int i, j, sum;
 	int k;
 
-	printf("1, 2");
-	for (k = 3; k <= 50; k++)
+	i = 1;
+	j = 2;
+	printf("1");
+	for (k = 2; k <= 50; k++)
 	{
 		sum = i + j;
 		i = j;
