@@ -6,7 +6,7 @@
 * Return: Return 0 Success
 */
 
-void main(void)
+int main(void)
 {
 	long int i, j, sum;
 	int k;
