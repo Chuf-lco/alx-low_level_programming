@@ -20,6 +20,6 @@ int main(void)
 			j--;
 		}
 	}
-	printf("%lu", j);
+	printf("%lu\n", j);
 	return (0);
 }
