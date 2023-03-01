@@ -20,10 +20,11 @@ char *_strncat(char *dest, char *src, int n)
 
 	while (n--)
 	{
-		if ((*i++ != *src++))
+		if (*i++ != *src++)
 		{
 			return (dest);
 		}
 	}
+	
 	return (dest);
 }
