@@ -10,43 +10,35 @@
 char *cap_string(char *str)
 {
 	int i;
+	int count = 0;
+	int s_count = 0;
 
-	i = 0;
-	while (str[i])
+	while (str[count] != '\0')
 	{
-		if (i == 0 && (str[i] >= 'a' && str[i] <= 'z'))
+		count++;
+	}
+	for (i = 0; i < count; i++)
+	{
+		if (str[i] == ' ' || str[i] == '\t' ||
+				str[i] == '\n' || str[i] == ',' ||
+				str[i] == ';' || str[i] == '.' ||
+				str[i] == '!' || str[i] == '?' ||
+				str[i] == '"' || str[i] == '(' ||
+				str[i] == ')' || str[i] == '{' ||
+				str[i] == '}')
+			s_count = 0;
+		else
 		{
-			str[i] -= 32;
+			if ((str[i] >= 'a' && str[i] <= 'z') && s_count == 0)
+			{
+				str[i] -= 32;
+				s_count++;
+			}
+			else
+			{
+				s_count++;
+			}
 		}
-		if (word_separator(str[i]) && (str[i + 1] >= 'a' && str[i + 1] <= 'z'))
-		{
-			str[i + 1] -= 32;
-		}
-		i++
 	}
 	return (str);
-}
-
-/**
- * word_separator -Entry point
- * description: Word separators
- * @c: an input character
- * Return: 1 if seperator, 0 otherwise
- */
-
-
-int word_separator(char c)
-{
-	int i = 0;
-
-	char separator[13] = { ' ', '/t', '\n', ',', ';', '.', '!', '?',
-		'"', '(', ')', '{', '}' };
-	for (; i < 13; i++)
-	{
-		if (c == separator[i])
-		{
-			return (1);
-		}
-	}
-	return (0);
 }
