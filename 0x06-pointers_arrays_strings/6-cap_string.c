@@ -3,7 +3,7 @@
 /**
  * cap_string -Entry point
  * description: Capitalize words
- * @n: array
+ * @str: array
  * Return: Return Uppercase
  */
 
@@ -18,10 +18,10 @@ char *cap_string(char *str)
 		{
 			i++;
 		}
-		if (str[i - 1] == ' ' || 
-		 str[i - 1] == '\t' || 
-		 str[i - 1] == '\n' || 
-		 str[i - 1] == ',' || 
+		if (str[i - 1] == ' ' ||
+		 str[i - 1] == '\t' ||
+		 str[i - 1] == '\n' ||
+		 str[i - 1] == ',' ||
 		 str[i - 1] == ';' ||
 		 str[i - 1] == '.' ||
 		 str[i - 1] == '!' ||
