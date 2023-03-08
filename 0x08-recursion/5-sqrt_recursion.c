@@ -1,5 +1,7 @@
 #include "main.h"
 
+int _abs_sqrt(int n, int i);
+
 /**
  * _sqrt_recursion -Entry point
  * description: Natural squareroot of a number
