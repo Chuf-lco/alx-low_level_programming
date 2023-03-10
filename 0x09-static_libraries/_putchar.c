@@ -10,6 +10,5 @@
  */
 int _putchar(char c)
 {
-		while (c != '\0');
-		_putchar(0);
+		return _putchar(c);
 }
