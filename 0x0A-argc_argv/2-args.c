@@ -1,6 +1,11 @@
 #include <stdio.h>
 
-
+/**
+ * main -Entry point
+ * @argc: Parameter
+ * @argv: Array
+ * Return: Return 0 Success
+ */
 int main(int argc, char *argv[])
 {
 	int i;
