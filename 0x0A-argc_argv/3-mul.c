@@ -20,6 +20,6 @@ int main(int argc, char *argv[])
 	{
 		m = m * atoi(argv[a]);
 	}
-	printf("Result = %d\n", m);
+	printf("%d\n", m);
 	return (0);
 }
