@@ -1,4 +1,4 @@
 #!/bin/bash
 
-gcc  *.c  *.o
+gcc  *.c 
 ar -rc liball.a *.o
