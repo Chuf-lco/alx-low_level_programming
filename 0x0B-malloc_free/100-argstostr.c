@@ -16,7 +16,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		*str = av[i];
+		str = av[i];
 		while (*str != '\0')
 		{
 			len++;
@@ -24,12 +24,12 @@ char *argstostr(int ac, char **av)
 		}
 		len++;/*1 for newline character*/
 	}
-	concat_str = (char *)malloc((len + 1) * sizeof(char));/*for null terminator*/
+	*concat_str = (char *)malloc((len + 1) * sizeof(char));/*for null terminator*/
 	if (concat_str == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		*str = av[i];
+		str = av[i];
 		while (*str != '\0')
 			concat_str[postn++] = *str++;
 		concat_str[postn++] = '\n';
