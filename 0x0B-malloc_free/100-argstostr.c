@@ -6,7 +6,6 @@
  * @av: Pointer to pointer
  * Return: Return string Success
  */
-
 char *argstostr(int ac, char **av)
 {
 	size_t len, postn;
@@ -17,7 +16,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		str = av[i];
+		*str = av[i];
 		while (*str != '\0')
 		{
 			len++;
@@ -30,7 +29,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		str = av[i];
+		*str = av[i];
 		while (*str != '\0')
 			concat_str[postn++] = *str++;
 		concat_str[postn++] = '\n';
