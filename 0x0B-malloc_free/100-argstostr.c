@@ -24,7 +24,7 @@ char *argstostr(int ac, char **av)
 		}
 		len++;/*1 for newline character*/
 	}
-	*concat_str = (char *)malloc((len + 1) * sizeof(char));/*for null terminator*/
+	concat_str = (char *)malloc((len + 1) * sizeof(char));/*for null terminator*/
 	if (concat_str == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
