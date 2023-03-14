@@ -19,14 +19,16 @@ char *argstostr(int ac, char **av)
 	{
 		str = av[i];
 		while (*str != '\0')
+		{
 			len++;
 			str++;
+		}
 		len++;/*1 for newline character*/
 	}
 	concat_str = (char *)malloc((len + 1) * sizeof(char));/*for null terminator*/
 	if (concat_str == NULL)
 		return (NULL);
-	for (int i = 0; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		str = av[i];
 		while (*str != '\0')
