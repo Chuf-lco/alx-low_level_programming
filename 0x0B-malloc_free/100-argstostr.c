@@ -8,7 +8,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	size_t len, postn;
+	size_t len = 0, postn = 0;
 	int i;
 	char *concat_str, *str;
 
@@ -31,7 +31,7 @@ char *argstostr(int ac, char **av)
 	{
 		str = av[i];
 		while (*str != '\0')
-			concat_str[postn++] = str++;
+			concat_str[postn++] = *str++;
 		concat_str[postn++] = '\n';
 	}
 	concat_str[len] = '\0';
