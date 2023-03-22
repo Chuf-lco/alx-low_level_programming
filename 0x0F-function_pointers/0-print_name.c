@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-#include "_putchar.c"
+#include <stdio.h>
 /**
  * print_name -Print a name
  * @name: Arguement
