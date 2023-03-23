@@ -4,6 +4,7 @@
 /**
  * sum_them_all -Entry point
  * @n: Number of values
+ * @...: Number of parameters
  * Return: Return sum Success
  */
 int sum_them_all(const unsigned int n, ...)
