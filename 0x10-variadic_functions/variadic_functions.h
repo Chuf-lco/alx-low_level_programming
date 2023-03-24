@@ -5,6 +5,11 @@
 
 #include <stdio.h>
 
+/**
+ * struct printer -Entry point
+ * @symbol: Parameter
+ * @print: Print argument
+ */
 typedef struct printer
 {
 	char *symbol;
