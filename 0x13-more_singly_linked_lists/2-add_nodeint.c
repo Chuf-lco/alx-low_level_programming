@@ -6,7 +6,7 @@
  * add_nodeint -Adding a new node
  * @head: Points to head pointer
  * @n: Number of nodes
- * Return : Return address Success
+ * Return: Return address Success
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
