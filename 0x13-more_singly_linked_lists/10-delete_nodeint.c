@@ -24,7 +24,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 	h = *head;/*h pointer to previous node*/
 	t = (*head)->next;/*t pointer to current node*/
-	if (*h == NULL)
+	if (h == NULL)
 	{
 		return (-1);
 	}
