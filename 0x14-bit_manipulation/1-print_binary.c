@@ -7,7 +7,7 @@ void print_binary(unsigned long int n)
 {
 	unsigned long int m;
 /*Initialize mask with enough bit set*/
-	m = 1UL << (sizeof(int) * 3 - 2);
+	m = 1UL << (sizeof(unsigned long int));
 	while (m > 0)
 	{
 		if (n & m)/*checks if bit value is set*/
