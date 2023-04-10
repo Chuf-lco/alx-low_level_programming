@@ -27,16 +27,19 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	b = (char *)malloc(letters + 1);
 	if (b == NULL)
 	{
+		close(f);
 		return (0);
 	}
 	r_letters = read(f, b, letters);
 	if (r_letters <= 0)
 	{
 		free(b);
+		close(f);
 		return (0);
 	}
 	p_letters = write(STDOUT_FILENO, b, r_letters);
 	free(b);
+	close(f);
 	if (p_letters != r_letters)
 	{
 		return (0);
